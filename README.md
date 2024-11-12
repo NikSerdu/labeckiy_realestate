@@ -21,7 +21,7 @@ Using docker compose (port 80)
 
 ## How to use?
 
-Find the src/components/Form/data/file.ts and add your field.
+Find the src/components/Form/data.ts and add your field.
 
 ## Demo
 
