@@ -2,19 +2,8 @@ import { Box, Button, Flex, VStack } from '@chakra-ui/react'
 import { useFormik } from 'formik'
 import { FC } from 'react'
 import CustomField from '../CustomField/CustomField'
-import { fields } from './data'
-import { IInitialValues } from './initialValues.types'
+import { fields, initialValues } from './data'
 import { validationSchema } from './validationSchema'
-
-const initialValues: IInitialValues = {
-	name: '',
-	address: '',
-	floor: 1,
-	totalFloors: 3,
-	square: 0,
-	livingSquare: 0,
-	kitchenSquare: 0,
-}
 
 export const Form: FC = () => {
 	const { handleSubmit, getFieldProps, errors, touched } = useFormik({
