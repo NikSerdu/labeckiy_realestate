@@ -8,8 +8,9 @@ import { validationSchema } from './validationSchema'
 export const Form: FC = () => {
 	const { handleSubmit, getFieldProps, errors, touched } = useFormik({
 		initialValues,
-		onSubmit: values => {
-			console.log(values)
+		onSubmit: (values, { resetForm }) => {
+			alert(JSON.stringify(values))
+			resetForm()
 		},
 		validationSchema,
 	})
